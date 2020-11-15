@@ -1,0 +1,8 @@
+.customer__sidebar {
+  background: black;
+  height: 95vh;
+}
+
+.customer__sidebar > ul {
+  list-style: none;
+}
