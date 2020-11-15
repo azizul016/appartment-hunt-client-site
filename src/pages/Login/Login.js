@@ -9,8 +9,8 @@ function Login({ user, setUser }) {
   const history = useHistory();
 
   useEffect(() => {
-    setUser(JSON.parse(localStorage.getItem("volunteer-network-user")) || {});
-    if (user.email) {
+    setUser(JSON.parse(localStorage.getItem("apartment-hunt")) || {});
+    if (user?.email) {
       history.replace("/admin/bookinglist");
     }
   }, []);
@@ -26,7 +26,7 @@ function Login({ user, setUser }) {
       .then(function (result) {
         const newUser = result.user;
         localStorage.setItem(
-          "volunteer-network-user",
+          "apartment-hunt",
           JSON.stringify({
             name: newUser.displayName,
             email: newUser.email,

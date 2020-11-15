@@ -1,6 +1,6 @@
-import * as auth from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { auth } from "../../FirabaseConfig";
 import logo from "../../Logo.png";
 
 function Header({ user, setUser }) {
@@ -20,11 +20,11 @@ function Header({ user, setUser }) {
   }, []);
 
   const logout = () => {
-    auth()
+    auth
       .signOut()
       .then(() => {
         setUser({});
-        localStorage.removeItem("volunteer-network-user");
+        localStorage.removeItem("apartment-hunt");
       })
       .catch((error) => {
         alert(error.message);
