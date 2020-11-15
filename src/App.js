@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./App.scss";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import Header from "./components/Header/Header";
 import PrivateRoute from "./components/PrivateRoute";
-import HouseDetails from "./pages/HouseDetails/HouseDetails";
 import Admin from "./pages/Admin/Admin";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Home from "./pages/Home/Home";
+import HouseDetails from "./pages/HouseDetails/HouseDetails";
 
 function App() {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    setUser(JSON.parse(localStorage.getItem("volunteer-network-user")) || {});
+    setUser(JSON.parse(localStorage.getItem("apartment-hunt")) || {});
   }, []);
 
   return (
@@ -25,7 +25,7 @@ function App() {
         </Route>
         <Route path="/housedetails/:id">
           <Header user={user} setUser={setUser} />
-          <HouseDetails />
+          <HouseDetails></HouseDetails>
         </Route>
         <Route path="/login">
           <Login user={user} setUser={setUser} />
@@ -33,7 +33,7 @@ function App() {
         <PrivateRoute user={user} path="/admin/:pagename">
           <Admin user={user} />
         </PrivateRoute>
-        <Route>
+        <Route path="*">
           <ErrorPage />
         </Route>
       </Switch>
@@ -42,3 +42,6 @@ function App() {
 }
 
 export default App;
+
+// <Header user={user} setUser={setUser} />
+// <HouseDetails />
