@@ -74,7 +74,7 @@ function Header({ user, setUser }) {
             </NavLink>
 
             <div className="loginBtn">
-              {user.email ? (
+              {user && user.email ? (
                 <button className="btn ml-3" onClick={logout}>
                   LOGOUT
                 </button>
