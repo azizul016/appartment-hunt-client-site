@@ -33,7 +33,7 @@ function Header({ user, setUser }) {
 
   return (
     <div className={`position-sticky sticky-top w-100 ${bg && "bg-light"} `}>
-      <nav className="container navbar navbar-expand-lg header">
+      <nav className="container navbar navbar-expand-lg header bg-light">
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="" className="header__logo" />
         </Link>
@@ -65,6 +65,32 @@ function Header({ user, setUser }) {
             >
               My Orders
             </NavLink>
+
+            <NavLink
+              activeClassName="selected"
+              className="nav-link ml-3"
+              exact
+              to="/about"
+            >
+              About
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              className="nav-link ml-3"
+              exact
+              to="/service"
+            >
+              Service
+            </NavLink>
+            <NavLink
+              activeClassName="selected"
+              className="nav-link ml-3"
+              exact
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+
             <NavLink
               activeClassName="selected"
               className="nav-link ml-3"

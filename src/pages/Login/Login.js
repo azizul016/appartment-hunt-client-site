@@ -150,7 +150,7 @@ function Login({ user, setUser }) {
       <div className="form_wrapper">
                   <div className='container'>
                       <div className="row d-flex align-items-center">
-                          <div className="col-md-6 offset-3">
+                          <div className="col-md-6 offset-md-3 col-sm-12">
                               <Form className='loginFrom' onSubmit={handleSubmit}>
                                   <h4>{newUser ?'Create an account' : 'Log In' }</h4>
                                   {newUser && <Form.Group className='mt-4'>
@@ -191,10 +191,10 @@ function Login({ user, setUser }) {
                                       <span></span>
                                   </div>
                                   <div className='fbToGoogle'>
-                                      <button className='google btn' onClick={fbLogIn}>
+                                      <button className='facebook btn' onClick={fbLogIn}>
                                           Continue with Facebook
                                       </button> <br />
-                                      <button className='facebook btn' onClick={loginWithGoogle}>
+                                      <button className='google btn' onClick={loginWithGoogle}>
                                           Continue with Google
                                       </button>
                                   </div>

@@ -6,7 +6,7 @@ const SingleService = (props) => {
 
   return (
     <div className="singleService">
-      <div className="col-md-4 text-center align-items-center mx-auto">
+      <div className="col-md-4 col-sm-12 text-center align-items-center mx-auto">
         <div className="card" style={{ width: "18rem" }}>
           <img className="" src={img} alt="" />
           <div className="card-body">
