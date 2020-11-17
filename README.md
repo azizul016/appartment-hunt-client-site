@@ -31,6 +31,7 @@
      <li> REDUX
      <li> Material UI
      <li> Bootstrap
+     <li> React-Bootstrap
      <li>Local Storage
       <li> Heroku
  </ul>
