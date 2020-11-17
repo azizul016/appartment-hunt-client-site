@@ -191,10 +191,14 @@ function Login({ user, setUser }) {
                                       <span></span>
                                   </div>
                                   <div className='fbToGoogle'>
+                                  
+                                  
                                       <button className='facebook btn' onClick={fbLogIn}>
+                                          <img className='fbGoogleImg' src={'https://i.ibb.co/THSWSPh/Group-2.png'} alt="facebook"/>
                                           Continue with Facebook
                                       </button> <br />
                                       <button className='google btn' onClick={loginWithGoogle}>
+                                          <img className='fbGoogleImg' src={'https://i.ibb.co/yndt2Wp/Group-573.png'} alt="google"/>
                                           Continue with Google
                                       </button>
                                   </div>

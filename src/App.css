@@ -10,9 +10,7 @@ p, small {
 a:hover {
   text-decoration: none;
 }
-/* .header__logo {
-  height: 54px;
-} */
+
 .nav-link {
   color: #000;
 }
@@ -24,7 +22,9 @@ a:hover {
 .selected {
   border-bottom: 2px solid #00aa00;
 }
-
+.text-light {
+  color: #000000!important;
+}
 @media (max-width:991px){
    .google, .facebook{
      width: 83% !important;
