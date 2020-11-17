@@ -112,11 +112,11 @@ $newHeadingColor: #16322e;
       height: 80px;
       margin: auto;
     }
-    .card-title{
+    .card-title {
       color: $newHeadingColor;
       font-weight: $font-weight;
     }
-    .card-text{
+    .card-text {
       color: #606268;
     }
   }
@@ -124,40 +124,66 @@ $newHeadingColor: #16322e;
 
 //bookingAppartment;
 
+// .bookingAppartment {
+//   .card {
+//     .bedImg {
+//       width: 30px;
+//     }
+//     .bathImg {
+//       width: 30px;
+//     }
+//     .price {
+//       font-weight: $font-weight;
+//       color: $buttonBgColor;
+//     }
+//     border: none !important;
+//     .card-body {
+//       .card-title {
+//         color: $buttonBgColor;
+//         font-weight: $font-weight;
+//         .card-text {
+//           .locationImg {
+//             width: 20px;
+//           }
+//         }
+//       }
+//     }
+//     .card-footer {
+//       border: none !important;
+//       h6 {
+//         font-weight: $font-weight;
+//         margin-top: 7px;
+//       }
+//       button {
+//         @extend %button-shared;
+//       }
+//     }
+//   }
+// }
+
 .bookingAppartment {
   .card {
-    .bedImg {
-      width: 30px;
-    }
-    .bathImg {
-      width: 30px;
-    }
-    .price {
+    .card-title{
+      color: $newHeadingColor;
       font-weight: $font-weight;
-      color: $buttonBgColor;
     }
-    border: none !important;
-    .card-body {
-      .card-title {
+    .card-body{
+      .price{
         color: $buttonBgColor;
         font-weight: $font-weight;
-        .card-text {
-          .locationImg {
-            width: 20px;
-          }
-        }
       }
     }
-    .card-footer {
-      border: none !important;
-      h6 {
-        font-weight: $font-weight;
-        margin-top: 7px;
-      }
-      button {
-        @extend %button-shared;
+    .card-text{
+      img{
+        height: 4vh!important;
       }
     }
+    border: none !important;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(199, 197, 197, 0.644);
+  }
+  button {
+    @extend %button-shared;
   }
 }
 
@@ -190,6 +216,14 @@ $newHeadingColor: #16322e;
   }
 }
 
+
+.addService__form{
+  button{
+    @extend %button-shared;
+  }
+}
+
+
 //banner FooterTextColor
 .bannerFooter {
   p {
@@ -220,45 +254,44 @@ $newHeadingColor: #16322e;
   border-radius: 30px;
   margin-bottom: 20px;
   margin-left: 8%;
-  border: 1px solid #C7C7C7;
+  border: 1px solid #c7c7c7;
 }
-.loginFrom{
-  border : 1px solid #E5E5E5;
+.loginFrom {
+  border: 1px solid #e5e5e5;
   padding: 2em;
   border-radius: 10px;
-  input{
-    border : none;
+  input {
+    border: none;
     color: $linkColor;
   }
-  .formInput{
-    border-bottom: 1px solid #C5C5C5 !important;
+  .formInput {
+    border-bottom: 1px solid #c5c5c5 !important;
   }
-  .logInBtn{
-    width : 460px;
-    height : 50px;
-    background : #275A53;
+  .logInBtn {
+    width: 460px;
+    height: 50px;
+    background: #275a53;
     margin: 20px 0;
-    color : $textColor;
-    font-size : 1em;
+    color: $textColor;
+    font-size: 1em;
   }
 }
-.formSocial{
+.formSocial {
   margin-top: 1.5em;
-  span{
-    width : 200px;
+  span {
+    width: 200px;
     height: 2px;
-    background :#AAAAAA;
-    margin : 10px;
+    background: #aaaaaa;
+    margin: 10px;
   }
-  .google{
+  .google {
     @include googleFb;
   }
-  .facebook{
+  .facebook {
     @include googleFb;
   }
-  .fbGoogleImg{
+  .fbGoogleImg {
     width: 30px;
     float: left;
   }
 }
-

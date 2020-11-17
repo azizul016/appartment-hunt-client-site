@@ -19,11 +19,15 @@ function Admin({ user }) {
 
   return (
     <div className="admin">
-      <div className="header py-4">
+      <div className="header py-3">
         <div className="row">
           <div className="col-3 ">
             <Link to="/">
-              <img src={logo} style={{ height: "50px" }} alt="" />
+              <img
+                src={logo}
+                style={{ height: "54px", paddingLeft: "20px" }}
+                alt=""
+              />
             </Link>
           </div>
           <div className="col-md-9 d-flex justify-content-between align-items-center pr-4">
@@ -68,9 +72,12 @@ function Admin({ user }) {
               </li>
             </ul>
           </div>
-          
+
           <div className="col-md-10 col-9 customer__right py-4">
-          <h2 className="text-center">Welcome to <span className="text-info">{user.name}</span> Dashboard</h2>
+            <h2 className="text-center">
+              Welcome to <span className="text-info">{user.name}</span>{" "}
+              Dashboard
+            </h2>
             {pagename === "bookinglist" && <BookingList user={user} />}
             {pagename === "addrenthouse" && <AddRentHouse user={user} />}
             {pagename === "myrent" && <MyRent user={user} />}

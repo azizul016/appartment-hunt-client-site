@@ -128,7 +128,7 @@ function AddService() {
         </div>
       </div>
 
-      <button type="submit" className="btn px-4 my-3 btn-success">
+      <button type="submit" className="btn px-4 my-3">
         SUBMIT
       </button>
     </form>

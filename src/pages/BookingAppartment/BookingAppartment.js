@@ -15,7 +15,7 @@ function BookingAppartment({search}) {
   return (
     <div className="home">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           {houses.filter(element => element.title.toLowerCase().includes(search.trim())).map((house) => (
             <BookingSingleAppartment
               house={house}
