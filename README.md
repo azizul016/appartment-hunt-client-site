@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+<h1>Apartment Hunt </h1> <h5> -A full stack web app for house-rent provider.</h5>
+   <ul> 
+	  <li> <a target="_blank" href="https://apartment-hunt-main.web.app/"> Live Website Link</a>
+	  <li> <a target="_blank" href="https://github.com/alamgirakash2000/apartment-hunt-client"> Client Side Code Link</a>
+	  <li> <a target="_blank" href="https://github.com/alamgirakash2000/aparment-hunt-server"> Server Side Code Link</a>
+   </ul>
+    
+<h2>Description </h2>
+<p> It's a full MERN stack Web Application where anyone can see which houses we are providing and can book a house with their details. In cilent page, anycone can see their booking order, place a booking. Admin can see all the booking and add a new house. Also update a booking statu. It also has google, facebook and email authentication withn firebase.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2> Functionality </h2>
+<ul>
+   <li> <b> CURD operations by Mongoose</b>
+  <li> <b>Render multiple pages through React Router</b>
+  <li> <b> Store data globally by REDUX </b>
+  <li> <b> Firebase Authentication </b>
+  <li> <b> Store data in  MongoDB by Mongoose and Express </b>
+  <li> <b> Good Looking Landing page</b>
+  <li> <b> Store data at localStorage </b>
+  <li> <b> Deploy client side on firebase</b>
+   <li> <b> Deploy server side on Heroku</b>
+</ul>
+     
+  <h2> Technology </h2>
+   <ul> 
+     <li> REACT
+     <li> Node js
+     <li> Express js
+     <li> Mongoose
+     <li> Firebase Authentication
+     <li> REDUX
+     <li> Material UI
+     <li> Bootstrap
+     <li>Local Storage
+      <li> Heroku
+ </ul>
