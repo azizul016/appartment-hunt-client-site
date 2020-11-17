@@ -293,5 +293,9 @@ $newHeadingColor: #16322e;
   .facebook{
     @include googleFb;
   }
+  .fbGoogleImg{
+    width: 30px;
+    float: left;
+  }
 }
 
