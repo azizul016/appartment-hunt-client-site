@@ -16,7 +16,7 @@ const BookingSingleAppartment = (props) => {
             <h4 className="card-title">{title}</h4>
             <p className="card-text">
               <div className="row">
-                <div className="col-md-2 col-sm-2 ">
+                <div className="col-md-2 col-sm-1 ">
                   <img
                     className="img-fluid locationImg"
                     src={locationImg}
@@ -69,7 +69,9 @@ const BookingSingleAppartment = (props) => {
                 <h6 className="price">${price}</h6>
               </div>
               <div className="col-md-8 col-sm-6">
-                <Link to={`/housedetails/${_id}`}><button className="btn">View Details</button></Link>
+                <Link to={`/housedetails/${_id}`}>
+                  <button className="btn">View Details</button>
+                </Link>
               </div>
             </div>
           </div>

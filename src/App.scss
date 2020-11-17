@@ -1,39 +1,3 @@
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// p,
-// small {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// a:hover {
-//   text-decoration: none;
-// }
-
-// .header__logo {
-//   height: 40px;
-// }
-
-// .nav-link {
-//   color: #000;
-// }
-
-// .navbar-toggler-icon {
-//   display: inline-block;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .selected {
-//   border-bottom: 2px solid #00aa00;
-// }
-
-///////////////////////////////////////////
-
 $textColor: #ffffff !important;
 $linkColor: #000000;
 $buttonBgColor: #275a53 !important;
@@ -49,8 +13,7 @@ $newHeadingColor: #16322e;
 %background-image-shared {
   background-image: url("./components/resources/images/banner.png");
   background-repeat: no-repeat;
-  background-position: center center;
-  // height: 70vh;
+  background-position: bottom center;
   height: 350px;
   background-size: cover;
 }
@@ -218,6 +181,7 @@ $newHeadingColor: #16322e;
     }
   }
   .submitForm {
+    box-shadow: 0 0 15px rgb(173, 173, 173);
     button {
       @extend %button-shared;
       width: 100%;
@@ -248,8 +212,7 @@ $newHeadingColor: #16322e;
     }
   }
 }
-
-// sonjoybarmon login page scss codes.
+//logged IN page
 @mixin googleFb {
   width: 460px;
   height: 50px;

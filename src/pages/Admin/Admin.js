@@ -68,7 +68,9 @@ function Admin({ user }) {
               </li>
             </ul>
           </div>
+          
           <div className="col-md-10 col-9 customer__right py-4">
+          <h2 className="text-center">Welcome to <span className="text-info">{user.name}</span> Dashboard</h2>
             {pagename === "bookinglist" && <BookingList user={user} />}
             {pagename === "addrenthouse" && <AddRentHouse user={user} />}
             {pagename === "myrent" && <MyRent user={user} />}

@@ -134,9 +134,9 @@ function HouseDetails() {
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 p-3">
             <form
-              className="submitForm text-center p-5"
+              className=" text-center submitForm p-5"
               onSubmit={handleSubmit}
             >
               <div className="form-group">
