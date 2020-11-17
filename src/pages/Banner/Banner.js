@@ -22,8 +22,3 @@ const Banner = (props) => {
 };
 
 export default Banner;
-
-// <form action="" className="d-block d-flex align-items-center justify-content-center">
-// <input className="form-control" type="text" />
-// <button className="btn ml-3">Find Now</button>
-// </form>

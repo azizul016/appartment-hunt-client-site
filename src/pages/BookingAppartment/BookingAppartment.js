@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../../axios";
 import BookingSingleAppartment from "./BookingSingleAppartment";
 
-function BookingAppartment() {
+function BookingAppartment({search}) {
   const [houses, setHouses] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function BookingAppartment() {
     <div className="home">
       <div className="container">
         <div className="row">
-          {houses.map((house) => (
+          {houses.filter(element => element.title.toLowerCase().includes(search.trim())).map((house) => (
             <BookingSingleAppartment
               house={house}
               key={Math.random()}

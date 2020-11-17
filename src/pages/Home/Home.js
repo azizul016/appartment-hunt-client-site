@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../Banner/Banner";
 import BannerFooter from "../BannerFooter/BannerFooter";
 import BookingAppartment from "../BookingAppartment/BookingAppartment";
@@ -6,6 +6,8 @@ import Footer from "../Footer/Footer";
 import Services from "../Services/Services";
 
 const Home = () => {
+  const [search, setSearch] = useState('');
+  const [searchText, setSearchText] = useState('');
   return (
     <div>
       <Banner>
@@ -17,20 +19,21 @@ const Home = () => {
                 Search Item
               </label>
               <input
+              onChange={(e) =>setSearch(e.target.value)}
                 type="text"
                 class="form-control"
                 id="inputPassword2"
                 placeholder="Search..."
               />
             </div>
-            <button type="submit" class="btn btn-primary mb-2">
+            <button onClick={() =>setSearchText(search)} type="submit" class="btn btn-primary mb-2">
               Find Now
             </button>
           </form>
         </div>
       </Banner>
       <BannerFooter></BannerFooter>
-      <BookingAppartment></BookingAppartment>
+      <BookingAppartment search={searchText.toLowerCase()}></BookingAppartment>
       <Services></Services>
       <Footer></Footer>
     </div>
