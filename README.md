@@ -1,8 +1,8 @@
 <h1>Apartment Hunt </h1> <h5> -A full stack web app for house-rent provider.</h5>
    <ul> 
 	  <li> <a target="_blank" href="https://apartment-hunt-main.web.app/"> Live Website Link</a>
-	  <li> <a target="_blank" href="https://github.com/alamgirakash2000/apartment-hunt-client"> Client Side Code Link</a>
-	  <li> <a target="_blank" href="https://github.com/alamgirakash2000/aparment-hunt-server"> Server Side Code Link</a>
+	  <li> <a target="_blank" href="https://github.com/azizul016/appartment-hunt-client-site"> Client Side Code Link</a>
+	  <li> <a target="_blank" href="https://github.com/azizul016/appartment-hunt-server"> Server Side Code Link</a>
    </ul>
     
 <h2>Description </h2>
