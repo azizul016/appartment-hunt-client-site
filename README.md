@@ -1,7 +1,4 @@
 <h1>Apartment Hunt </h1> <h5> -A full stack web app for house-rent provider.</h5>
-![image](https://user-images.githubusercontent.com/67515560/99929186-765b0700-2d76-11eb-9941-6cec7cce4b63.png)
-![image](https://user-images.githubusercontent.com/67515560/97528895-f476f880-19d8-11eb-9e06-b32c17d603f8.png "Fake-Profile-Generator")
-
    <ul> 
 	  <li> <a target="_blank" href="https://apartment-hunt-main.web.app/"> Live Website Link</a>
 	  <li> <a target="_blank" href="https://github.com/azizul016/appartment-hunt-client-site"> Client Side Code Link</a>
