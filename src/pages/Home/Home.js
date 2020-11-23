@@ -8,6 +8,10 @@ import Services from "../Services/Services";
 const Home = () => {
   const [search, setSearch] = useState('');
   const [searchText, setSearchText] = useState('');
+  const handleSearch = (e) =>{
+    e.preventDefault();
+    setSearchText(search);
+  }
   return (
     <div>
       <Banner>
@@ -26,7 +30,7 @@ const Home = () => {
                 placeholder="Search..."
               />
             </div>
-            <button onClick={() =>setSearchText(search)} type="submit" class="btn btn-primary mb-2">
+            <button onClick={handleSearch} type="submit" class="btn btn-primary mb-2">
               Find Now
             </button>
           </form>
@@ -41,3 +45,4 @@ const Home = () => {
 };
 
 export default Home;
+// (e) =>setSearchText(search)

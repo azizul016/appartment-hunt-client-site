@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useHistory } from "react-router-dom";
 import { auth } from "../../FirabaseConfig";
 import logo from "../../Logo.png";
 
 function Header({ user, setUser }) {
+  const history = useHistory();
   const [bg, setBg] = useState(false);
 
   useEffect(() => {
@@ -31,10 +32,15 @@ function Header({ user, setUser }) {
       });
   };
 
+  const handleReload = () => {
+    history.push("/");
+    window.location.reload();
+  };
+
   return (
     <div className={`position-sticky sticky-top w-100 ${bg && "bg-light"} `}>
       <nav className="container navbar navbar-expand-lg header bg-light">
-        <Link className="navbar-brand" to="/">
+        <Link onClick={handleReload} className="navbar-brand" to="/">
           <img src={logo} alt="" className="header__logo" />
         </Link>
         <button

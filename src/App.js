@@ -10,9 +10,13 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Home from "./pages/Home/Home";
 import HouseDetails from "./pages/HouseDetails/HouseDetails";
 import ComingSoon from "./pages/ErrorPage/ComingSoon";
+import { selectUser } from "./features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
   const [user, setUser] = useState({});
+  const newUser = useSelector(selectUser);
+  console.log(newUser);
 
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("apartment-hunt")) || {});
